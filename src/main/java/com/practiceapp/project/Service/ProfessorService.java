@@ -14,12 +14,13 @@ public class ProfessorService {
 	@Autowired
 	private ProfessorRepository repo;
 	
-	
+	//create a professor
 	public Professor saveProfessorById(Professor P) {
 		
 		repo.save(P);
 		return P;
 	}
+	//create multiple professor
 	public List<Professor> saveAllProfessor(List<Professor> P){
 		
 		repo.saveAll(P);
