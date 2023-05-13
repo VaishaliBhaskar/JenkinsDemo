@@ -27,7 +27,7 @@ public class ProfessorService {
 		return P;
 		
 	}
-	//get Professor by id
+	//get Professor details by id
 	public Professor findProfessorById(int id) {
 		return repo.findById(id).orElseThrow(null);
 	}
