@@ -26,6 +26,7 @@ public class ProfessorController {
 		
 		service.saveProfessorById(professor);
 	}
+	//create multiple new resources
 	@PostMapping("/professor/createall")
 	public void createMultipleProfessor(@RequestBody List<Professor> professor) {
 		
