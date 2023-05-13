@@ -31,25 +31,26 @@ public class ProfessorService {
 	public Professor findProfessorById(int id) {
 		return repo.findById(id).orElseThrow(null);
 	}
-	
+	//get professor by id
 	public List<Professor> findAllProfessor(){
 		return repo.findAll();
 		
 	}
+	//delete a professor
 	public String deleteProfessorById(int id) {
 		repo.deleteById(id);
 		
 		return " Professor deleted by id";
 		
 	}
-	
+	//delete all professor
 	public String deleteAllProfessor() {
 		repo.deleteAll();
 		
 		return "All Professor deleted";
 		
 	}
-	
+	//update a professor
 	public Professor updateProfessor(Professor P) {
 		Professor exist=repo.findById(P.getId()).orElseThrow();
 		exist.setName(P.getName());
