@@ -20,6 +20,7 @@ public class ProfessorController {
 	@Autowired
 	private ProfessorService service;
 	
+	//create a new resource
 	@PostMapping("/professor/create")
 	public void createProfessor(@RequestBody Professor professor) {
 		
