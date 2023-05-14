@@ -33,7 +33,7 @@ public class ProfessorController {
 		service.saveAllProfessor(professor);
 	}
 	
-	
+	//get all professor
 	@GetMapping("/professor/getallprofessor")
 	public List<Professor> getAllProfessor() {
 		return service.findAllProfessor();
